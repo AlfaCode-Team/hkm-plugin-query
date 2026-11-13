@@ -1,0 +1,16 @@
+{
+  "name":    "query",
+  "version": "1.0.0",
+  "kernel":  "^1.14",
+  "solves":  "database.query",
+  "type":    "module",
+  "description": "Portable SQL query builder — one fluent API compiled to MySQL, PostgreSQL, SQLite or SQL Server dialect.",
+
+  "requires": [],
+  "exposes":  ["QueryFactoryContract"],
+
+  "config": [
+    { "key": "DB_DRIVER", "type": "string", "required": false, "default": "mysql" },
+    { "key": "QUERY_TABLE_PREFIX", "type": "string", "required": false }
+  ]
+}

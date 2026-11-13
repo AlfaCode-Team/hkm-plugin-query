@@ -1,0 +1,25 @@
+{
+    "name": "alfacode-team/hkm-plugin-query",
+    "description": "Portable SQL query builder for the HKM kernel — one fluent API compiled to MySQL, PostgreSQL, SQLite or SQL Server dialect. Not an ORM.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["hkm-kernel", "query-builder", "sql", "database", "gated-demand-architecture"],
+    "require": {
+        "php": ">=8.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11 || ^12 || ^13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Query\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Plugins\\Query\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
